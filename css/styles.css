@@ -1,0 +1,8 @@
+.horizontal-line {
+height: 1px;
+background-color: black;
+}
+.icon-classname::after {
+content:"\e628";
+color: black;
+}

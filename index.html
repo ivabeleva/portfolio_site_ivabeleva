@@ -7,6 +7,10 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles-intro.css">
+    <link rel="stylesheet" type="text/css" href="css/styles-about.css">
+    <link rel="stylesheet" type="text/css" href="css/styles-benefits.css">
+    <link rel="stylesheet" type="text/css" href="css/styles-projects.css">
     <link href="/img/home/favicon.ico" rel="shortcut icon">
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
@@ -14,248 +18,246 @@
 </head>
 
 <body>
-    <header>
-        <div>
-            <a href="index.html">
-                <img src="img/home/logo.svg" alt="A and O logo" class="logo">
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#about-us">About us</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header class="navigation-container">
+        <a href="index.html">
+            <img src="img/home/logo.svg" alt="A and O logo" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about-us">About us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <section class="home-hero">
-            <div class="container">
-                <div class="header">
-                    <h1>Developing unique <span>digital experiences</span></h1>
+    <section class="home-hero">
+        <div class="home-title">
+            <h1>Developing unique <span>digital experiences</span></h1>
+        </div>
+    </section>
+
+    <section class="intro">
+        <div class="row-intro">
+            <div class="column-intro">
+                <div class="placeholder-intro"></div>
+                <div class="services">
+                    <p>Development / Cloud Architecture / DevOps / UX/UI Design / Strategy</p>
                 </div>
-                <div class="intro">
-                    <p>We are a small but growing tech team specialising in IT development and design services with over
-                        13
-                        years of experience with focus on DevOps and container technologies. Dedicated to transforming
-                        businesses we deliver tailored, innovative solutions that drive growth and long-lasting value
-                        for
-                        our clients.</p>
+                <div class="placeholder-intro"></div>
+            </div>
+            <div class="column-intro">
+                <div class="row-intro">
+                    <div class="introduction">
+                        <p>We are a small but growing tech team specialising in IT development and design services with over
+                            13
+                            years of experience with focus on DevOps and container technologies. Dedicated to transforming
+                            businesses we deliver tailored, innovative solutions that drive growth and long-lasting value
+                            for
+                            our clients.</p>
+                    </div>
+                    <div class="placeholder-intro"></div>
+                </div>
+                <div class="we-create">
+                    <p>At A & O we create.</p>
                 </div>
             </div>
-        </section>
-
-        <section class="projects" id="projects">
-            <div>
-                <div class="grid1">
-                    <div class="header1">
-                        <h2>Projects</h2>
-                    </div>
-                    <div class="copy1">
-                        <p>We design, develop, and ship digital products that drive success for our clients
-                            through
-                            innovative solutions, user-centred design, and cutting-edge technology. Our goal is to
-                            deliver
-                            impactful
-                            solutions that exceed expectations and propel our clients towards their goals.</p>
-                    </div>
-                </div>
-                <div class="grid2">
-                    <div class="clickable ob">
-                        <div>
-                            <picture>
-                                <source srcset="/img/home/project_1@1x.jpg" media="(max-width:767px)">
-                                <img src="/img/home/project_1@2x.jpg" alt="Online consulting platform">
-                            </picture>
-                        </div>
-                        <div>
-                            <h3 class="label"><a href="online-consulting-platform.html">Online consulting platform</a></h3>
-                            <!--<p>The online counseling platform is a responsive web application. It offers low-threshold
-                                chat
-                                counseling for people with depression, addiction problems or financial difficulties and
-                                allows you to remain anonymous.</p>-->
-                        </div>
-                    </div>
-                    <div class="clickable lumen">
-                        <div>
-                            <picture>
-                                <source srcset="/img/home/project_2@1x.jpg" media="(max-width:767px)">
-                                <img src="/img/home/project_2@2x.jpg" alt="Lumen">
-                            </picture>
-                        </div>
-                        <div>
-                            <h3 class="label"><a href="lumen.html">Lumen</a></h3>
-                            <!--<p>Lumen is a finance app that integrates all financial instruments of the user in one
-                                place.
-                                Simplified cash flow management and the ability to send money directly to contacts are
-                                the
-                                main value propositions of the MVP version.</p>-->
-                        </div>
-                    </div>
-                    <div class="clickable relaxify">
-                        <div>
-                            <picture>
-                                <source srcset="/img/home/project_3@1x.jpg" media="(max-width:767px)">
-                                <img src="/img/home/project_3@2x.jpg" alt="Relaxify">
-                            </picture>
-                        </div>
-                        <div>
-                            <h3 class="label"><a href="relaxify.html">Relaxify</a></h3>
-                            <!--<p>Relaxify is a scientifically backed mental health app designed to assist individuals in
-                                overcoming depression, anxiety, and post-traumatic stress. It offers cognitive exercises
-                                and
-                                stress-reducing techniques, coupled with regular surveys to assess and track
-                                improvements
-                                over time.</p>-->
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <div class="display-title">
-            <p>Join us.</p>
-            <p>Learn.</p>
-            <p>Grow.</p>
         </div>
 
-        <section class="about" id="about-us">
-            <div class="grid3">
-                <div class="ourteam-header">
-                    <h2>Our Team</h2>
-                    <a href="files/cv-ibeleva.pdf" target="_blank">View team resume
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="feather feather-download">
-                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                            <polyline points="7 10 12 15 17 10"></polyline>
-                            <line x1="12" y1="15" x2="12" y2="3"></line>
-                        </svg>
-                    </a>
-                </div>
-                <p class="ourteam-copy">We’re a small group of techies and creative thinkers based in Munich and
-                    Sofia who is built for
-                    people who love growing, learning and creating together. We motivate, inspire and help our
-                    members
-                    move forward in their careers. We believe that a positive and supportive work culture is built
-                    on
-                    strong relationships between team members. We foster a sense of community, and we encourage our
-                    team
-                    to work together and support each other in achieving our collective goals.</p>
+    </section>
 
-                <div class="georgi">
-                    <div>
-                        <picture>
-                            <source srcset="/img/home/georgi_mishev@1x.jpg" media="(max-width:767px)">
-                            <img src="/img/home/georgi_mishev@2x.jpg" alt="Georgi Mishev">
-                        </picture>
-                    </div>
-                    <div class="label">
-                        <strong>Georgi Mishev</strong>
-                    </div>
-                </div>
-                <div class="iva">
-                    <div>
-                        <picture>
-                            <source srcset="/img/home/iva_beleva@1x.jpg" media="(max-width:767px)">
-                            <img src="/img/home/iva_beleva@2x.jpg" alt="Iva Beleva">
-                        </picture>
-                    </div>
-                    <div class="label">
-                        <strong>Iva Beleva</strong>
-                    </div>
-                </div>
-                <div class="join-us">
-                    <div>
-                        <picture>
-                            <source srcset="img/home/join_us@1x.jpg" media="(max-width:767px)">
-                            <img src="/img/home/join_us@2x.jpg" alt="Join us">
-                        </picture>
-                    </div>
-                    <a href="mailto:i.beleva@senokol.com" class="btn">Join the team
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7 17L17 7" stroke="black" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path d="M7 7H17V17" stroke="black" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </a>
+    <section class="projects" id="projects">
+        <div class="row1-projects">
+            <div class="column-projects">
+                <h2>Projects</h2>
+            </div>
+            <div class="column-projects copy-projects">
+                <p>We design, develop, and ship digital products that drive success for our clients
+                    through
+                    innovative solutions, user-centred design, and cutting-edge technology. Our goal is to
+                    deliver
+                    impactful
+                    solutions that exceed expectations and propel our clients towards their goals.</p>
+            </div>
+            <div class="column-projects placeholder">
+            </div>
+        </div>
+        <div class="row2-projects grid2">
+            <div class="column-projects clickable ob">
+                <picture>
+                    <source srcset="img/home/project_1@1x.jpg" media="(max-width:767px)">
+                    <img src="img/home/project_1@2x.jpg" alt="Online consulting platform">
+                </picture>
+                <div>
+                    <h3 class="label"><a href="online-consulting-platform.html">Online consulting platform</a>
+                    </h3>
+                    <!-- <p>The online counseling platform is a responsive web application. It offers low-threshold
+                        chat
+                        counseling for people with depression, addiction problems or financial difficulties and
+                        allows you to remain anonymous.</p> -->
                 </div>
             </div>
-        </section>
-
-        <section class="benefits">
-            <div>
+            <div class="column-projects clickable lumen">
+                <picture>
+                    <source srcset="img/home/project_2@1x.jpg" media="(max-width:767px)">
+                    <img src="img/home/project_2@2x.jpg" alt="Lumen">
+                </picture>
                 <div>
-                    <h2>Our Benefits</h2>
+                    <h3 class="label"><a href="lumen.html">Lumen</a></h3>
+                    <!-- <p>Lumen is a finance app that integrates all financial instruments of the user in one
+                        place.
+                        Simplified cash flow management and the ability to send money directly to contacts are
+                        the
+                        main value propositions of the MVP version.</p> -->
                 </div>
-                <div>
-                    <ol>
-                        <li>
-                            <h3>Social Benefits</h3>
-                            <hr>
-                            <p>Additional health and dental insurance packages</p>
-                        </li>
-                        <li>
-                            <h3>Learning Budget</h3>
-                            <hr>
-                            <p>Dedicated time and budget for curiosity & exploration</p>
-                        </li>
-                        <li>
-                            <h3>Competitive salary</h3>
-                            <hr>
-                            <p>We believe in compensating our employees fairly for their skills, experience, and
-                                contributions
-                                to the success of our team. Our goal is to ensure that our team members feel valued and
-                                motivated to excel in their roles, knowing that they are rewarded appropriately for
-                                their
-                                hard
-                                work and dedication.</p>
-                        </li>
-                        <li>
-                            <h3>MultiSport Card</h3>
-                            <hr>
-                            <p>We offer sports passes and fitness benefits to promote workplace health and wellness.</p>
-                        </li>
-                        <li>
-                            <h3>Extra days off</h3>
-                            <hr>
-                            <p>The longer you work with us, the more paid leave you get.</p>
-                        </li>
-                        <li>
-                            <h3>Remote & flex work</h3>
-                            <hr>
-                            <p>Choose where you would like to work from</p>
-                        </li>
-                        <li>
-                            <h3>Team events</h3>
-                            <hr>
-                            <p>Regular team buildings and events</p>
-                        </li>
-                    </ol>
-                </div>
-                <!--Left for referance, please ignore
-                <div>
-                    <div>
-                        <h3>Team events</h3>
-                        <h3>7</h3>
-                    </div>
-                    <div class="horizontal-line">
-                    </div>
-                    <div>
-                        <p>Regular team buildings and events</p>
-                    </div>
-                </div>-->
             </div>
+            <div class="column-projects clickable relaxify">
+                <picture>
+                    <source srcset="img/home/project_3@1x.jpg" media="(max-width:767px)">
+                    <img src="img/home/project_3@2x.jpg" alt="Relaxify">
+                </picture>
+                <div>
+                    <h3 class="label"><a href="relaxify.html">Relaxify</a></h3>
+                    <!-- <p>Relaxify is a scientifically backed mental health app designed to assist individuals in
+                        overcoming depression, anxiety, and post-traumatic stress. It offers cognitive exercises
+                        and
+                        stress-reducing techniques, coupled with regular surveys to assess and track
+                        improvements
+                        over time.</p> -->
+                </div>
+            </div>
+        </div>
+    </section>
 
-        </section>
+    <div class="display-title">
+        <p>Join us.</p>
+        <br>
+        <p>Learn.</p>
+        <br>
+        <p>Grow.</p>
+    </div>
 
-    </main>
+    <section class="about" id="about-us">
+        <div class="row1-about">
+            <div class="column-about">
+                <h2 class>Our Team</h2>
+                <a href="files/cv-ibeleva.pdf" target="_blank" class="download-btn">View team resume
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-download" style="padding-left: 8px;">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                </a>
+            </div>
+            <p class="column-about">We’re a small group of techies and creative thinkers based in Munich and
+                Sofia who is built for
+                people who love growing, learning and creating together. We motivate, inspire and help our
+                members
+                move forward in their careers. We believe that a positive and supportive work culture is built
+                on
+                strong relationships between team members. We foster a sense of community, and we encourage our
+                team
+                to work together and support each other in achieving our collective goals.</p>
+            <div class="column-about placeholder">
+            </div>
+        </div>
+        <div class="row2-about">
+            <div class="column-about georgi">
+                <picture>
+                    <source srcset="/img/home/georgi_mishev@1x.jpg" media="(max-width:767px)">
+                    <img src="/img/home/georgi_mishev@2x.jpg" alt="Georgi Mishev">
+                </picture>
+                <div class="label">
+                    <strong>Georgi Mishev</strong>
+                </div>
+            </div>
+            <div class="column-about iva">
+                <picture>
+                    <source srcset="img/home/iva_beleva@1x.jpg" media="(max-width:767px)">
+                    <img src="img/home/iva_beleva@2x.jpg" alt="Iva Beleva">
+                </picture>
+                <div class="label">
+                    <strong>Iva Beleva</strong>
+                </div>
+            </div>
+            <div class="column-about join-us">
+                <picture>
+                    <source srcset="img/home/join_us@1x.jpg" media="(max-width:767px)">
+                    <img src="img/home/join_us@2x.jpg" alt="Join us">
+                </picture>
+                <a href="mailto:i.beleva@senokol.com" class="btn">Join the team
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 17L17 7" stroke="black" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M7 7H17V17" stroke="black" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
 
-    <footer id="contact">
-        <div>
+    <section class="benefits">
+        <div class="header-benefits">
+            <h2>Our Benefits</h2>
+        </div>
+        <ol class="row">
+            <div class="column">
+                <li class="benefit1">
+                    <h3>Social Benefits</h3>
+                    <hr>
+                    <p>Additional health and dental insurance packages</p>
+                </li>
+                <li class="benefit2">
+                    <h3>Learning Budget</h3>
+                    <hr>
+                    <p>Dedicated time and budget for curiosity & exploration</p>
+                </li>
+            </div>
+            <div class="column">
+                <li class="benefit3">
+                    <h3>Competitive salary</h3>
+                    <hr>
+                    <p>We believe in compensating our employees fairly for their skills, experience, and
+                        contributions
+                        to the success of our team. Our goal is to ensure that our team members feel valued
+                        and
+                        motivated to excel in their roles, knowing that they are rewarded appropriately for
+                        their
+                        hard
+                        work and dedication.</p>
+                </li>
+                <li class="benefit4">
+                    <h3>MultiSport Card</h3>
+                    <hr>
+                    <p>We offer sports passes and fitness benefits to promote workplace health and wellness.
+                    </p>
+                </li>
+            </div>
+            <div class="column">
+                <li class="benefit5">
+                    <h3>Extra days off</h3>
+                    <hr>
+                    <p>The longer you work with us, the more paid leave you get.</p>
+                </li>
+                <li class="benefit6">
+                    <h3>Remote & flex work</h3>
+                    <hr>
+                    <p>Choose where you would like to work from</p>
+                </li>
+                <li class="benefit7">
+                    <h3>Team events</h3>
+                    <hr>
+                    <p>Regular team buildings and events</p>
+                </li>
+            </div>
+        </ol>
+    </section>
+
+    <footer class="contact" id="contact">
+        <div class="footer">
             <a href="mailto:i.beleva@senokol.com" class="say-hi-button">say hello
                 <svg width="154" height="154" viewBox="0 0 154 154" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M31.6273 77.0001H122.373" stroke="white" stroke-width="16" stroke-linecap="round"
@@ -265,20 +267,22 @@
                 </svg>
             </a>
             <div class="adress">
-                <strong>A&O EOOD</strong>
-                <p>67 Angel Kunchev</p>
-                <p>Sofia 1569, Bulgaria</p>
-                <a href="tel:+3591234567">+359 123 45 67</a>
-            </div>
-            <div>
-                <p>© 2024 A&O EOOD</p>
-                <a href="https://www.linkedin.com/in/ivabeleva/" target="_blank">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M19 0H5C2.239 0 0 2.239 0 5V19C0 21.761 2.239 24 5 24H19C21.762 24 24 21.761 24 19V5C24 2.239 21.762 0 19 0ZM8 19H5V8H8V19ZM6.5 6.732C5.534 6.732 4.75 5.942 4.75 4.968C4.75 3.994 5.534 3.204 6.5 3.204C7.466 3.204 8.25 3.994 8.25 4.968C8.25 5.942 7.467 6.732 6.5 6.732ZM20 19H17V13.396C17 10.028 13 10.283 13 13.396V19H10V8H13V9.765C14.396 7.179 20 6.988 20 12.241V19Z"
-                            fill="white" />
-                    </svg>
-                </a>
+                <div>
+                    <strong>A&O EOOD</strong>
+                    <p>67 Angel Kunchev</p>
+                    <p>Sofia 1569, Bulgaria</p>
+                    <a href="tel:+3591234567">+359 123 45 67</a>
+                </div>
+                <div clas="rights">
+                    <p>© 2024 A&O EOOD</p>
+                    <a href="https://www.linkedin.com/in/ivabeleva/" target="_blank" class="linkedin-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19 0H5C2.239 0 0 2.239 0 5V19C0 21.761 2.239 24 5 24H19C21.762 24 24 21.761 24 19V5C24 2.239 21.762 0 19 0ZM8 19H5V8H8V19ZM6.5 6.732C5.534 6.732 4.75 5.942 4.75 4.968C4.75 3.994 5.534 3.204 6.5 3.204C7.466 3.204 8.25 3.994 8.25 4.968C8.25 5.942 7.467 6.732 6.5 6.732ZM20 19H17V13.396C17 10.028 13 10.283 13 13.396V19H10V8H13V9.765C14.396 7.179 20 6.988 20 12.241V19Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                </div>
             </div>
         </div>
     </footer>

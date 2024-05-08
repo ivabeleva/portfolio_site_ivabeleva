@@ -1,0 +1,64 @@
+.projects {
+    background-color: #F2F2F2;
+}
+
+.clickable {
+    position: relative;
+}
+
+.clickable a:after {
+    content: "";
+    display: block !IMPORTANT;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.row1-projects {
+    display: flex;
+    padding: 158px 12px 24px 12px;
+}
+
+.row2-projects {
+    display: flex;
+    padding-bottom: 158px;
+}
+
+.column-projects {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-bottom: 24px;
+}
+
+.copy-projects {
+    flex: 0.7;
+}
+
+.placeholder {
+    flex: 0.3;
+}
+.relaxify {
+    flex: 0.5;
+}
+
+.lumen {
+    flex: 0.5;
+}
+
+@media only screen and (max-width: 767px) {
+    .row1-projects {
+        flex-wrap: wrap;
+        padding-bottom: 12px;
+    }
+    .row2-projects {
+        flex-wrap: wrap;
+        padding-bottom: 60px;
+    }
+    .column-projects {
+        flex-basis: 100%;
+    }
+}

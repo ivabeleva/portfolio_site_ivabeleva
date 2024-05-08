@@ -1,0 +1,76 @@
+.about {
+    background-color: #F2F2F2;
+    padding-top: 120px;
+}
+
+.row1-about {
+    display: flex;
+    margin: 0px 12px 120px 12px;
+}
+
+.row2-about {
+    display: flex;
+}
+
+.column-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    padding-bottom: 24px;
+}
+
+.header-about {
+    padding-bottom: 24px;
+}
+
+@media only screen and (max-width: 767px) {
+    .row1-about {
+        flex-wrap: wrap;
+        margin-bottom: 42px;
+    }
+    .row2-about {
+        flex-wrap: wrap;
+    }
+    .column-about {
+        flex-basis: 100%;
+    }
+}
+
+.label {
+    padding: 12px;
+    background-color: white;
+    font-family: NeueMontrealBold;
+    text-decoration: none;
+}
+
+ a {
+    text-decoration: none;
+    color: black;
+ }
+
+ a:hover {
+    text-decoration: none;
+ }
+
+.btn {
+    padding: 12px;
+    background-color: #39B8E5;
+    font-family: NeueMontrealBold;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: black;
+}
+
+.btn:hover {
+    background-color: #33A3CC;
+}
+
+.download-btn {
+    display: flex;
+    font-family: NeueMontrealBold;
+    text-decoration: underline;
+    width: max-content;
+}

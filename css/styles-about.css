@@ -24,19 +24,6 @@
     padding-bottom: 24px;
 }
 
-@media only screen and (max-width: 767px) {
-    .row1-about {
-        flex-wrap: wrap;
-        margin-bottom: 42px;
-    }
-    .row2-about {
-        flex-wrap: wrap;
-    }
-    .column-about {
-        flex-basis: 100%;
-    }
-}
-
 .label {
     padding: 12px;
     background-color: white;
@@ -62,6 +49,7 @@
     flex-direction: row;
     justify-content: space-between;
     color: black;
+    transition: 0.5s background-color;
 }
 
 .btn:hover {
@@ -73,4 +61,17 @@
     font-family: NeueMontrealBold;
     text-decoration: underline;
     width: max-content;
+}
+
+@media only screen and (max-width: 767px) {
+    .row1-about {
+        flex-wrap: wrap;
+        margin-bottom: 42px;
+    }
+    .row2-about {
+        flex-wrap: wrap;
+    }
+    .column-about {
+        flex-basis: 100%;
+    }
 }

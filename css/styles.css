@@ -48,7 +48,7 @@ main {
 
 header {
     margin: 0px;
-    padding: 0px 64px 0px 64px;
+    padding: 6px 64px 6px 64px;
     color: white;
     align-items: center;
     display: flex;
@@ -59,10 +59,7 @@ header {
 
 .navigation-container {
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 72px;
     z-index: 1000;
     background-color: black;
 }
@@ -81,13 +78,39 @@ nav > ul > li > a {
     font-family: NeueMontrealBold;
     color: white;
 }
-@media only screen and (max-width: 767px) {
-    nav > ul > li > a {
-        padding: 0px 12px;
-    }
-    header {
-        padding: 0px 20px;
-    }
+
+.container-hover-nav {
+    position: relative;
+}
+
+.nav-item:before, .nav-item:after
+{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.nav-item:before
+{
+    top: 0px;
+    transform: translateY(10px);
+}
+
+.nav-item:after
+{
+    bottom: 0px;
+    transform: translateY(-10px);
+}
+
+.nav-item:hover:before, .nav-item:hover:after
+{
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 .home-hero {
@@ -124,27 +147,6 @@ h1 {
     color: white;
 }
 
-@media only screen and (max-width: 1200px) {
-    h1 {
-        font-size: 4em;
-        line-height: 1.4;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    h1 {
-        font-size: 3em;
-        line-height: 1.4;
-    }
-}
-
-@media only screen and (max-width: 445px) {
-    h1 {
-        font-size: 2.5em;
-        line-height: 1.4;
-    }
-}
-
 h2 {
     font-size: 2em;
     font-family: "NeueMontrealBold";
@@ -166,13 +168,6 @@ h3 {
     font-family: "NeueMontrealBold";
     text-align: center;
     color: white;
-}
-
-@media only screen and (max-width: 767px) {
-    .display-title p {
-        font-size: 3em;
-        line-height: 1.4;
-    }
 }
 
 p {
@@ -200,6 +195,7 @@ footer {
     flex: 0.5;
     flex-direction: column;
     align-items: baseline;
+    padding: 0px 12px;
 }
 
 .rights {
@@ -208,23 +204,6 @@ footer {
 
 .linkedin-btn {
     padding-left: 24px;
-}
-
-.adress strong {
-    font-family: "NeueMontrealBold";
-   }
-
-@media only screen and (max-width: 767px) {
-    .footer {
-        flex-wrap: wrap;
-    }
-    .say-hi-button {
-        flex-basis: 100%;
-        font-size: 48px;
-    }
-    .adress {
-        flex-basis: 100%;
-    }
 }
 
 .say-hi-button {
@@ -242,6 +221,10 @@ footer {
     text-decoration: underline;
 }
 
+.adress strong {
+    font-family: "NeueMontrealBold";
+   }
+
 img {
     width: 100%;
 }
@@ -250,3 +233,51 @@ picture {
     display: inline-block;
     line-height: 0;
     }
+
+@media only screen and (max-width: 1200px) {
+    h1 {
+        font-size: 4em;
+        line-height: 1.4;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .footer {
+        flex-wrap: wrap;
+    }
+    .say-hi-button {
+        flex-basis: 100%;
+        font-size: 48px;
+    }
+
+    .say-hi-button svg {
+        height: 60px;
+        width: 60px;
+    }
+    .adress {
+        flex-basis: 100%;
+        padding-bottom: 48px;
+    }
+    .display-title p {
+        font-size: 3em;
+        line-height: 1.4;
+    }
+
+    nav > ul > li > a {
+        padding: 0px 12px;
+    }
+    header {
+        padding: 0px 20px;
+    }
+    h1 {
+        font-size: 3em;
+        line-height: 1.4;
+    }
+}
+
+@media only screen and (max-width: 445px) {
+    h1 {
+        font-size: 2.5em;
+        line-height: 1.4;
+    }
+}

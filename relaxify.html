@@ -13,27 +13,25 @@
 </head>
 
 <body>
-    <header>
-        <div>
-            <a href="index.html">
-                <img src="img/home/logo.svg" alt="A and O logo" class="logo">
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#about-us">About us</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header class="navigation-container">
+        <a href="index.html">
+            <img src="../img/home/logo.svg" alt="A and O logo" class="logo">
+        </a>
+        <nav>
+            <ul>
+                <li class="container-hover-nav"><a class="nav-item" href="#projects">Projects</a></li>
+                <li class="container-hover-nav"><a class="nav-item" href="#about-us">About us</a></li>
+                <li class="container-hover-nav"><a class="nav-item" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <div>
         <h1>Relaxify</h1>
     </div>
 
-    <footer id="contact">
-        <div>
+    <footer class="contact" id="contact">
+        <div class="footer">
             <a href="mailto:i.beleva@senokol.com" class="say-hi-button">say hello
                 <svg width="154" height="154" viewBox="0 0 154 154" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M31.6273 77.0001H122.373" stroke="white" stroke-width="16" stroke-linecap="round"
@@ -43,20 +41,22 @@
                 </svg>
             </a>
             <div class="adress">
-                <strong>A&O EOOD</strong>
-                <p>67 Angel Kunchev</p>
-                <p>Sofia 1569, Bulgaria</p>
-                <a href="tel:+3591234567">+359 123 45 67</a>
-            </div>
-            <div>
-                <p>© 2024 A&O EOOD</p>
-                <a href="https://www.linkedin.com/in/ivabeleva/" target="_blank">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M19 0H5C2.239 0 0 2.239 0 5V19C0 21.761 2.239 24 5 24H19C21.762 24 24 21.761 24 19V5C24 2.239 21.762 0 19 0ZM8 19H5V8H8V19ZM6.5 6.732C5.534 6.732 4.75 5.942 4.75 4.968C4.75 3.994 5.534 3.204 6.5 3.204C7.466 3.204 8.25 3.994 8.25 4.968C8.25 5.942 7.467 6.732 6.5 6.732ZM20 19H17V13.396C17 10.028 13 10.283 13 13.396V19H10V8H13V9.765C14.396 7.179 20 6.988 20 12.241V19Z"
-                            fill="white" />
-                    </svg>
-                </a>
+                <div>
+                    <strong>A&O EOOD</strong>
+                    <p>67 Angel Kunchev</p>
+                    <p>Sofia 1569, Bulgaria</p>
+                    <a href="tel:+3591234567">+359 123 45 67</a>
+                </div>
+                <div class="rights">
+                    <p>© 2024 A&O EOOD</p>
+                    <a href="https://www.linkedin.com/in/ivabeleva/" target="_blank" class="linkedin-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19 0H5C2.239 0 0 2.239 0 5V19C0 21.761 2.239 24 5 24H19C21.762 24 24 21.761 24 19V5C24 2.239 21.762 0 19 0ZM8 19H5V8H8V19ZM6.5 6.732C5.534 6.732 4.75 5.942 4.75 4.968C4.75 3.994 5.534 3.204 6.5 3.204C7.466 3.204 8.25 3.994 8.25 4.968C8.25 5.942 7.467 6.732 6.5 6.732ZM20 19H17V13.396C17 10.028 13 10.283 13 13.396V19H10V8H13V9.765C14.396 7.179 20 6.988 20 12.241V19Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                </div>
             </div>
         </div>
     </footer>

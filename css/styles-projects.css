@@ -53,10 +53,11 @@
     .row1-projects {
         flex-wrap: wrap;
         padding-bottom: 12px;
+        padding-top: 24px;
     }
     .row2-projects {
         flex-wrap: wrap;
-        padding-bottom: 60px;
+        padding-bottom: 0px;
     }
     .column-projects {
         flex-basis: 100%;

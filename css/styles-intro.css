@@ -1,43 +1,36 @@
-.intro {
-    width: 100%;
-    height: 100%;
-}
 .introduction {
     background-color: #3C7E97;
     font-size: 24px;
-    line-height: 160%;
+    line-height: 1.6;
     font-family: "NeueMontrealBold";
     color: white;
     padding: 12px;
-    align-content: top right;
-    flex: 1;
+    height: 50vh;
+    display: flex;
+    width: 66.66%;
 }
 
 .row-intro {
     display: flex;
-    height: 100%;
-    flex: 1;
 }
 
 .column-intro {
     display: flex;
     flex-direction: column;
-    flex: 1;
-}
-
-.placeholder-intro {
-    flex: 0.5;
+    justify-content: center;
+    width: 50%;
 }
 
 .services {
     background-color: black;
-    font-size: 48px;
-    line-height: 160%;
+    font-size: 48px ;
+    line-height: 1.6 ;
     font-family: "NeueMontrealBold";
     color: white;
     padding: 24px 12px;
-    align-content: top right;
-    flex: 1;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .services h2 {
@@ -49,11 +42,11 @@
     background-color: black;
     display: flex;
     font-size: 48px;
-    line-height: 160%;
+    line-height: 1.6;
     font-family: "NeueMontrealBold";
     color: white;
     padding: 12px;
-    height: 50%;
+    height: 50vh;
     align-items: end;
 }
 
@@ -86,6 +79,7 @@ width: 100%;
     }
     .introduction {
         font-size: 16px;
+        width: 100%;
     }
     .we-create {
         font-size: 24px;

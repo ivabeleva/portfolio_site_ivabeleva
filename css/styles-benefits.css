@@ -69,8 +69,8 @@
 
 ol {
     padding: 0;
-    list-style-type: decimal-leading-zero;
-    list-style-position: inside;
+    counter-reset: index;
+    list-style-type: none;
 }
 
 li > h3 {
@@ -78,11 +78,10 @@ li > h3 {
     font-family: "NeueMontrealBold";
 }
 
-li::marker {
-    text-align: right;
-    font-size: 30px;
-    font-family: "NeueMontrealBold";
-  }
+.benefits li h3::after {
+    counter-increment: index;
+    content: counters(index, '.', decimal-leading-zero) ' ';
+}
 
 @media only screen and (max-width: 1024px) {
     .row {
@@ -90,5 +89,18 @@ li::marker {
     }
     .column {
         flex-basis: 100%;
+    }
+    .benefit1, .benefit2, .benefit3, .benefit4, .benefit5, .benefit6, .benefit7 {
+        padding: 32px 20px;
+    }
+    li > h3 {
+        font-size: 24px;
+    }
+    .benefits {
+        padding: 60px 0 0 0;
+    }
+    .header-benefits {
+        font-size: 32px;
+        padding-bottom: 60px;
     }
 }

@@ -113,7 +113,7 @@ nav > ul > li > a {
 }
 
 .home-title {
-    padding: 0px 12px 0px 12px;
+    padding: 0px 20px 0px 20px;
     background-color: black;
     flex-grow: 1;
 }
@@ -183,7 +183,7 @@ footer {
     flex: 0.5;
     flex-direction: column;
     align-items: baseline;
-    padding: 0px 12px;
+    padding: 0px 20px;
 }
 
 .rights {
@@ -203,7 +203,7 @@ footer {
     align-items: center;
     display: flex;
     flex: 1;
-    padding: 42px 12px 42px 12px;
+    padding: 42px 20px;
 }
 
 .say-hi-button:hover {
@@ -266,7 +266,7 @@ picture {
 
 @media only screen and (max-width: 445px) {
     h1 {
-        font-size: 2.5em;
+        font-size: 2em;
         line-height: 1.4;
     }
 }

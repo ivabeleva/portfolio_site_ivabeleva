@@ -44,10 +44,6 @@ header {
     margin: 0px;
     padding: 6px 64px 6px 64px;
     color: white;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
 .navigation-container {
@@ -57,27 +53,43 @@ header {
     background-color: black;
 }
 
-nav > ul {
+.navtoggle,
+.navtoggle.responsive {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navtoggle li .icon {
+    padding-right: 0;
+}
+
+nav>ul {
     list-style-type: none;
     padding: 0;
 }
 
-nav > ul > li {
+nav>ul>li {
     display: inline-block;
-  }
+}
 
-nav > ul > li > a {
+nav>ul>li>a {
     padding: 0 15px;
     font-family: NeueMontrealBold;
     color: white;
+}
+
+.navtoggle li:last-child {
+    display: none;
 }
 
 .container-hover-nav {
     position: relative;
 }
 
-.nav-item:before, .nav-item:after
-{
+.nav-item:before,
+.nav-item:after {
     position: absolute;
     left: 0px;
     width: 100%;
@@ -88,20 +100,18 @@ nav > ul > li > a {
     transition: all 0.3s;
 }
 
-.nav-item:before
-{
+.nav-item:before {
     top: 0px;
     transform: translateY(10px);
 }
 
-.nav-item:after
-{
+.nav-item:after {
     bottom: 0px;
     transform: translateY(-10px);
 }
 
-.nav-item:hover:before, .nav-item:hover:after
-{
+.nav-item:hover:before,
+.nav-item:hover:after {
     opacity: 1;
     transform: translateY(0px);
 }
@@ -167,6 +177,7 @@ footer {
     height: 100vh;
     position: relative;
 }
+
 .footer {
     background-color: black;
     color: white;
@@ -212,7 +223,7 @@ footer {
 
 .adress strong {
     font-family: "NeueMontrealBold";
-   }
+}
 
 img {
     width: 100%;
@@ -221,7 +232,7 @@ img {
 picture {
     display: inline-block;
     line-height: 0;
-    }
+}
 
 @media only screen and (max-width: 1200px) {
     h1 {
@@ -234,6 +245,7 @@ picture {
     .footer {
         flex-wrap: wrap;
     }
+
     .say-hi-button {
         flex-basis: 100%;
         font-size: 48px;
@@ -243,21 +255,47 @@ picture {
         height: 60px;
         width: 60px;
     }
+
     .adress {
         flex-basis: 100%;
         padding-bottom: 48px;
     }
+
     .display-title p {
         font-size: 3em;
         line-height: 1.4;
     }
 
-    nav > ul > li > a {
+    .navtoggle li:not(:last-child) {
+        display: none;
+    }
+
+    .navtoggle.responsive nav {
+        padding: 24px 0 0;
+    }
+
+    .navtoggle li:last-child {
+        display: block;
+    }
+
+    .navtoggle.responsive li {
+        display: block;
+        padding: 10px 0;
+        border-top: 1px solid white
+    }
+
+    nav>ul>li {
+        display: block;
+    }
+
+    nav>ul>li>a {
         padding: 0px 12px;
     }
+
     header {
         padding: 0px 20px;
     }
+
     h1 {
         font-size: 3em;
         line-height: 1.4;

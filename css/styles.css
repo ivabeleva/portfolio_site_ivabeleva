@@ -42,7 +42,7 @@ body {
 
 header {
     margin: 0px;
-    padding: 6px 64px 6px 64px;
+    padding: 0px 64px;
     color: white;
 }
 
@@ -59,15 +59,20 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    padding: 8px 0px;
 }
 
 .navtoggle li .icon {
     padding-right: 0;
+    position: absolute;
+    top: 16px;
+    right: 0;
 }
 
 nav>ul {
     list-style-type: none;
-    padding: 0;
+    margin: 0;
 }
 
 nav>ul>li {
@@ -266,12 +271,23 @@ picture {
         line-height: 1.4;
     }
 
+    .navtoggle, .navtoggle.responsive {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+}
+
+    .navtoggle {
+        padding: 16px 0px;
+    }
+
     .navtoggle li:not(:last-child) {
         display: none;
     }
 
     .navtoggle.responsive nav {
-        padding: 24px 0 0;
+        padding: 32px 0 0;
     }
 
     .navtoggle li:last-child {

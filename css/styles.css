@@ -186,6 +186,10 @@ footer {
     align-items: center;
 }
 
+footer a {
+    color: white;
+}
+
 .adress {
     display: flex;
     flex: 0.5;

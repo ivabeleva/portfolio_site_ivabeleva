@@ -3,6 +3,10 @@
     padding: 150px 0 220px 0;
 }
 
+hr {
+    color: white;
+}
+
 .header-benefits{
     text-align: center;
     font-size: 24px;
@@ -47,21 +51,21 @@
 }
 
 .benefit5 {
-    background-color: #659AA9;
+    background-color: #2E8098;
     color: white;
     padding: 48px;
     flex: 1;
 }
 
 .benefit6 {
-    background-color: #3C7E97;
+    background-color: #266C80;
     color: white;
     padding: 48px;
     flex: 0.25;
 }
 
 .benefit7 {
-    background-color: #226173;
+    background-color: #1F5666;
     color: white;
     padding: 48px;
     flex: 0.25;
@@ -75,7 +79,7 @@ ol {
 
 li > h3 {
     font-size: 30px;
-    font-family: "NeueMontrealBold";
+    font-weight: 900;
 }
 
 .benefits li h3::after {

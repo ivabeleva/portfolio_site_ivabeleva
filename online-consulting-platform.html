@@ -20,16 +20,23 @@
 
 <body>
     <header class="navigation-container">
-        <a href="index.html">
-            <img src="img/home/logo.svg" alt="A and O logo" class="logo">
-        </a>
-        <nav>
-            <ul>
-                <li class="container-hover-nav"><a class="nav-item" href="index.html#projects">Projects</a></li>
-                <li class="container-hover-nav"><a class="nav-item" href="index.html#about-us">About us</a></li>
-                <li class="container-hover-nav"><a class="nav-item" href="index.html#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="navtoggle" id="myNavtoggle">
+            <a href="index.html">
+                <img src="img/home/logo.svg" alt="A and O logo" class="logo">
+            </a>
+            <nav>
+                <ul>
+                    <li class="container-hover-nav"><a class="nav-item" href="index.html#projects"
+                            onclick="menuToggle()">Projects</a></li>
+                    <li class="container-hover-nav"><a class="nav-item" href="index.html#about-us"
+                            onclick="menuToggle()">About us</a></li>
+                    <li class="container-hover-nav"><a class="nav-item" href="index.html#contact"
+                            onclick="menuToggle()">Contact</a></li>
+                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
+                                class="fas fa-bars"></i></a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <div>

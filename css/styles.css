@@ -74,6 +74,7 @@ nav>ul>li>a {
     padding: 0 15px;
     font-weight: 800;
     color: white;
+    text-decoration: none;
 }
 
 .navtoggle li:last-child {
@@ -234,6 +235,17 @@ picture {
     display: inline-block;
     line-height: 0;
 }
+
+.conainer-img {
+    display: flex;
+    overflow: hidden;
+}
+
+.img:hover {
+    animation: zoom-in 0.3s;
+    animation-fill-mode: forwards;
+}
+
 
 @media only screen and (max-width: 1200px) {
     h1 {

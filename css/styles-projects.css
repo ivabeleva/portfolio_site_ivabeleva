@@ -17,6 +17,16 @@
     z-index: 1;
 }
 
+
+@keyframes zoom-in {
+    0% {
+    transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+
 .row1-projects {
     display: flex;
     padding: 158px 20px 24px 20px;
@@ -48,7 +58,6 @@
 .lumen {
     flex: 0.5;
 }
-
 @media only screen and (max-width: 767px) {
     .row1-projects {
         flex-wrap: wrap;

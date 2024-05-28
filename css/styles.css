@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    background-image: url(../img/home/mosaic.svg);
+    background-image: url(../img/home/mosaic1.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -241,9 +241,20 @@ picture {
     overflow: hidden;
 }
 
-.img:hover {
-    animation: zoom-in 0.3s;
-    animation-fill-mode: forwards;
+.column-about .img {
+    transition: all 0.3s ease-in-out;
+}
+.column-about:hover .img {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.column-projects .img {
+    transition: all 0.3s ease-in-out;
+}
+.column-projects:hover .img {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 
